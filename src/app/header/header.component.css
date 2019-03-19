@@ -1,21 +1,3 @@
-.nav-wrapper li{
-    padding: 5px;
+.nav-wrapper a{
     cursor: pointer;
-}
-
-.nav-wrapper input{
-    border-bottom: 1px #fafafa !important;
-    border-bottom-style: dashed !important;
-}
-
-.nav-wrapper .input-field .prefix{
-    right: 132px;
-    top: -5px;
-}
-.nav-wrapper a i{
-line-height: inherit;
-}
-
-.btn-login-header{
-    text-align: center;
 }
