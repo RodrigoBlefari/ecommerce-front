@@ -1,29 +1,43 @@
-<!DOCTYPE html>
 <html>
-   <head>
-      <title>The Materialize Dropdowns Example</title>
-      <meta name = "viewport" content = "width = device-width, initial-scale = 1">      
-      <link rel = "stylesheet"
-         href = "https://fonts.googleapis.com/icon?family=Material+Icons">
-      <link rel = "stylesheet"
-         href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
-      <script type = "text/javascript"
-         src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
-      <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
-      </script> 
-   </head>
-   
-   <body class = ""> 
-      
-   <script>
-       $(document).ready(function(){
-         $('.slider').slider();
-      });
-      
-   </script>
+  <head>
+    <!-- this is my CSS via cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  </head>
+  <body>
+      <style>
+          .slider .indicators .indicator-item {
+              z-index: 4;
+              top: -400;
+          }
+          .slider .indicators{
+            display: flex;
+            justify-content: space-between;
+          }
+          .card .card-image img{
+            min-height: 300px;
+            max-height: 300px;
+          }
+          </style>
 
    <app-root></app-root>
-   
-</body>
 
+    <!-- this is my JS via cdn -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script>
+  $(document).ready(function() {
+    
+    $('.modal').modal();
+    //this are my init
+    $('.datepicker').datepicker();
+    $(document).ready(function(){
+    $('.carousel').carousel();
+  });
+  $(document).ready(function(){
+    $('.slider').slider();
+  });
+});
+  </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  </body>
 </html>
+

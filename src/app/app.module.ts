@@ -10,6 +10,7 @@ import { CadastroComponent } from './cadastro/cadastro.component';
 import { CadastroformComponent } from './cadastro/cadastroform/cadastroform.component';
 import { HomeComponent } from './home/home.component';
 import { CadastrosidebarComponent } from './cadastro/cadastrosidebar/cadastrosidebar.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { CadastrosidebarComponent } from './cadastro/cadastrosidebar/cadastrosid
     CadastroformComponent,
     HomeComponent,
     CadastrosidebarComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
