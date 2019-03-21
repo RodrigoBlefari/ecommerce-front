@@ -1,11 +1,11 @@
 .carousel{
     z-index: 3;
-    top: -660px;    
-    height: 750px;
+    top: -620px;    
+    height: 660px;
 }
 .carousel img {
     width: 160%;
-    height: 430px;
+    height: 370px;
     -webkit-box-shadow: 0px 12px 29px -4px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 12px 29px -4px rgba(0,0,0,0.75);
     box-shadow: 0px 12px 29px -4px rgba(0,0,0,0.75);

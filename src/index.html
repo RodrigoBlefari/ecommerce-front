@@ -2,6 +2,8 @@
   <head>
     <!-- this is my CSS via cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   </head>
   <body>
       <style>
@@ -16,6 +18,9 @@
           .card .card-image img{
             min-height: 300px;
             max-height: 300px;
+          }
+          app-produtogrid .card{
+            box-shadow: 10px 7px 9px 6px rgba(0,0,0,0.75);
           }
           </style>
 
@@ -35,6 +40,21 @@
   $(document).ready(function(){
     $('.slider').slider();
   });
+  $(document).ready(function(){
+    $('.fixed-action-btn').floatingActionButton();
+  });
+  $( document ).ready(function() {
+      $('.collapsible').collapsible();
+      $('.fixed-action-btn').floatingActionButton({
+      toolbarEnabled: false,
+      hoverEnabled: false,
+      direction: "bottom"
+    });
+  });
+  $(document).ready(function() {
+    $('input.character-counter, textarea#textarea2').characterCounter();
+  });
+  
 });
   </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
