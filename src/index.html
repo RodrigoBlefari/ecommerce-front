@@ -1,14 +1,63 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>EcommerceFront</title>
-  <base href="/">
+<html>
+  <head>
+    <!-- this is my CSS via cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+  </head>
+  <body>
+      <style>
+          .slider .indicators .indicator-item {
+              z-index: 4;
+              top: -400;
+          }
+          .slider .indicators{
+            display: flex;
+            justify-content: space-between;
+          }
+          .card .card-image img{
+            min-height: 300px;
+            max-height: 300px;
+          }
+          app-produtogrid .card{
+            box-shadow: 10px 7px 9px 6px rgba(0,0,0,0.75);
+          }
+          </style>
+
+   <app-root></app-root>
+
+    <!-- this is my JS via cdn -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script>
+  $(document).ready(function() {
+    
+    $('.modal').modal();
+    //this are my init
+    $('.datepicker').datepicker();
+    $(document).ready(function(){
+    $('.carousel').carousel();
+  });
+  $(document).ready(function(){
+    $('.slider').slider();
+  });
+  $(document).ready(function(){
+    $('.fixed-action-btn').floatingActionButton();
+  });
+  $( document ).ready(function() {
+      $('.collapsible').collapsible();
+      $('.fixed-action-btn').floatingActionButton({
+      toolbarEnabled: false,
+      hoverEnabled: false,
+      direction: "bottom"
+    });
+  });
+  $(document).ready(function() {
+    $('input.character-counter, textarea#textarea2').characterCounter();
+  });
+  
+});
+  </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  </body>
 </html>
+

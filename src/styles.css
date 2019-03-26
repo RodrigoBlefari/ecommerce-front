@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-color:#48a69a;
+}
+app-produtogrid{
+    padding-top: 100px;
+}
+.login-form{
+    width: 50%;
+}
+.collapsible-body{
+    overflow: auto;
+}
+
+.fixed-action-btn{
+    top: 150px;
+}
